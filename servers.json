@@ -1,0 +1,31 @@
+{
+  "servers": [{
+      "name": "server-1",
+      "ip": "10.10.10.1",
+      "number_of_services": 4,
+      "os": "linux",
+      "status": "up"
+    },
+    {
+      "name": "server-2",
+      "ip": "10.10.10.2",
+      "number_of_services": 5,
+      "os": "windows",
+      "status": "down"
+    },
+    {
+      "name": "server-3",
+      "ip": "10.10.10.3",
+      "number_of_services": 10,
+      "os": "linux",
+      "status": "up"
+    },
+    {
+      "name": "server-4",
+      "ip": "10.10.10.4",
+      "number_of_services": 7,
+      "os": "linux",
+      "status": "down"
+    }
+  ]
+}
