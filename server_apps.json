@@ -1,0 +1,40 @@
+{
+  "server_apps": [{
+      "name": "server-1",
+      "ip": "10.10.10.1",
+      "os": "linux",
+      "applications": [{
+          "name": "Payroll",
+          "framework": "spring",
+          "database": "mysql"
+        },
+        {
+          "name": "hr",
+          "framework": "django",
+          "database": "postgres"
+        }
+      ]
+    },
+    {
+      "name": "server-2",
+      "ip": "10.10.10.2",
+      "os": "windows",
+      "applications": [{
+          "name": "Customer Success",
+          "framework": "spring",
+          "database": "presto"
+        },
+        {
+          "name": "Customer Services",
+          "framework": "flask",
+          "database": "mysql"
+        },
+        {
+          "name": "Customer Churn",
+          "framework": "grails",
+          "database": "postgres"
+        }
+      ]
+    }
+  ]
+}
