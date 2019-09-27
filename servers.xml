@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<data>
+    <server name="server-1">
+        <ip>10.10.10.1</ip>
+        <number_of_services>4</number_of_services>
+        <os>linux</os>
+        <status>up</status>
+    </server>
+    <server name="server-2">
+        <ip>10.10.10.2</ip>
+        <number_of_services>5</number_of_services>
+        <os>windows</os>
+        <status>down</status>
+    </server>
+    <server name="server-3">
+        <ip>10.10.10.3</ip>
+        <number_of_services>10</number_of_services>
+        <os>linux</os>
+        <status>up</status>
+    </server>
+    <server name="server-4">
+        <ip>10.10.10.4</ip>
+        <number_of_services>7</number_of_services>
+        <os>linux</os>
+        <status>down</status>
+    </server>
+</data>

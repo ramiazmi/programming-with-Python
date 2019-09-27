@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<data>
+    <server name="server-1">
+        <ip>10.10.10.1</ip>
+        <os>linux</os>
+        <application name="Payroll" framework="spring" database="mysql"/>
+        <application name="hr" framework="django" database="postgres"/>
+    </server>
+    <server name="server-2">
+        <ip>10.10.10.2</ip>
+        <os>windows</os>
+        <application name="Customer Success" framework="spring" database="presto"/>
+        <application name="Customer Services" framework="flask" database="mysql"/>
+        <application name="Customer Churn" framework="grails" database="postgres"/>
+    </server>
+</data>
