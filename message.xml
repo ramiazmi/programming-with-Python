@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <messages>
 	<message>
-       <to>Tove</to>
        <from>0599000001</from>
        <to>0599000002</to>
        <body>Happy birthday my friend</body>
