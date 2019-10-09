@@ -1,0 +1,40 @@
+ <shop>
+    <Books>
+		<Book id="1" price="11.35" volume="1">
+			<Title>Calculus</Title> 
+			<Author>Adam K.</Author>
+		</Book>
+		<Book id="2" price="12.05">
+			<Title>Physics</Title>
+			<Author>Samer A.</Author> 
+		</Book>
+		<Book id="3" price="5.50">
+			<Title>Programming Fundamentals with Python</Title> 
+			<Author>Rob K.</Author>
+        </Book>
+		<Book id="4" price="9.80">
+			<Title>Arts of War</Title> 
+			<Author>Lee X.</Author>
+        </Book>
+		<Book id="5" price="12.75">
+			<Title>Java Made Simple</Title> 
+			<Author>Robin M.</Author>
+        </Book>
+		<Book id="6" price="5.50" volume="1">
+			<Title>Software Engineering</Title> 
+			<Author>Carob C.</Author>
+        </Book>
+		<Book id="7" price="10.35">
+			<Title>Calculus in Action</Title> 
+			<Author>Adam K.</Author>
+		</Book>
+		<Book id="8">
+			<Title>Python Tutorial</Title> 
+			<Author>Freeman L.</Author>
+		</Book>
+		<Book id="9">
+			<Title>Scala Tutorial</Title> 
+			<Author>Norman B.</Author>
+		</Book>
+    </Books>
+</shop>
