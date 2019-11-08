@@ -9,7 +9,7 @@ employees_df = pd.read_csv('data/employees.csv')
 
 @app.route('/api/employees', methods=['GET'])
 def list_employees():
-    return '{"employess": ' + employees_df.to_json(orient='records') + '}'
+    return '{"employees": ' + employees_df.to_json(orient='records') + '}'
 
 
 if __name__ == '__main__':
