@@ -1,10 +1,9 @@
 import tkinter
-from tkinter import messagebox
 from tkinter import Button
 
 
 def buttonCallBack():
-    msg = messagebox.showinfo("Message Title", "Message Body")
+    print('Button clicked ... !')
 
 
 top = tkinter.Tk()
