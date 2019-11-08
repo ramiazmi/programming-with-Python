@@ -6,7 +6,7 @@ from tkinter import messagebox, Button, Entry, Label, LEFT, RIGHT
 def validate_email():
     email = E.get()
     if email:
-        result = 'Right Email' if re.match('^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$', email) else 'Wrong'
+        result = 'Right Email' if re.match('^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.[a-z]{2,3})+$', email) else 'Wrong'
         label.config(text=result)
     else:
         msg = messagebox.showinfo("Alert Message", "Please, enter an email .. !")
