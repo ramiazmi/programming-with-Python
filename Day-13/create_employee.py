@@ -7,7 +7,7 @@ app = Flask(__name__)
 data_path = '../../'  # You can choose a more specific path
 
 
-@app.route('/api/employee/create', methods=['POST'])
+@app.route('/api/employees', methods=['POST'])
 def list_employees_by_department():
     req_body = request.json
     employee = dict(req_body)
