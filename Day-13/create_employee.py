@@ -4,15 +4,22 @@ import json
 
 app = Flask(__name__)
 
-data_path = '../../'  # You can choose a more specific path
-
-
 @app.route('/api/employees', methods=['POST'])
 def list_employees_by_department():
-    req_body = request.data
-    employee = dict(req_body)
-    pd.DataFrame(employee, index=[0]).to_csv(data_path + 'employees.csv', mode='a', header=False, index=False)
-    return '{"employee":' + str(json.dumps(employee)) + ', "Status": "A new employee was created successfully"}', 201
+
+    # Reading employees data (Employee Resource)
+    employees_df = pd.read_csv('data/employees.csv')
+
+    data = request.data
+    employee = json.loads(data)
+
+    if employees_df.append(pd.DataFrame(employee, index=[0])).duplicated().sum() == 0:
+        with open('data/employees.csv', 'a') as f:
+            f.write('\n')
+            f.write('{},{},{}'.format(employee['Name'], employee['Department'], employee['Salary']))
+        return {'data': employee}, 201  # status code when a resource created successfully
+    else:
+        return {'data': 'Resource already exists!'}, 409
 
 
 if __name__ == '__main__':

@@ -50,7 +50,7 @@ def list_employees_by_department():
     except:
         df_ = employees_df
 
-    return '{"employees": ' + df_.to_json(orient='records') + '}'
+    return {"employees": df_.to_dict('records')}
 
 
 ########################################################################################################################
