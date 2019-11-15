@@ -6,3 +6,4 @@ venv-3/*
 */__pycache__/*
 */*.csv
 Day-13/data/*
+*.csv
