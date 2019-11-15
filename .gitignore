@@ -7,3 +7,4 @@ venv-3/*
 */*.csv
 Day-13/data/*
 *.csv
+Day-13/data/employees.csv
